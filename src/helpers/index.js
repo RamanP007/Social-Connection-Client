@@ -8,7 +8,7 @@ export const isUserLoggedIn = () => {
 };
 
 export const PrivateRoute = ({ children }) => {
-  return isUserLoggedIn() ? children : <Navigate to="/login" />;
+  return isUserLoggedIn() ? children : <Navigate to="/auth" />;
 };
 
 export const GetReq = async (_url) => {
